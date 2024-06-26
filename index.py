@@ -1,9 +1,14 @@
 
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import openai
 from openai import AzureOpenAI
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = FastAPI()
 
@@ -16,10 +21,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-ENDPOINT = "https://polite-ground-030dc3103.4.azurestaticapps.net/api/v1"
-API_KEY = "c40f7f56-f79c-4b27-af2d-0d0c46bb1972"
-API_VERSION = "2024-02-01"
-MODEL_NAME = "gpt-35-turbo"
+ENDPOINT = os.getenv("ENDPOINT")
+API_KEY = os.getenv("API_KEY")
+API_VERSION = os.getenv("API_VERSION")
+MODEL_NAME = os.getenv("MODEL_NAME")
 
 client = AzureOpenAI(
     azure_endpoint=ENDPOINT,
@@ -42,7 +47,7 @@ async def ask_question(query: Query):
         messages=messages,
     )
     
-    return {"answer": completion.choices[0].message.content}
+    return {"answer": completion.choices[0].message['content']}
 
 if __name__ == '__main__':
     import uvicorn
