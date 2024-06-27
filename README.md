@@ -68,3 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Inspiration
+The inspiration for Cognitive Tutor stemmed from the desire to enhance personalized learning experiences through the power of artificial intelligence. As educators and students face diverse challenges in the learning process, we envisioned a solution that adapts to individual needs, providing real-time assistance and tailored tutoring.
+
+### What it does
+Cognitive Tutor is an AI-powered educational assistant that helps students learn more effectively by providing real-time, personalized responses to their questions. Leveraging advanced natural language processing and machine learning algorithms from Azure OpenAI, it delivers clear and accurate explanations across a wide range of subjects. Throughout this project, I learned a lot about Microsoft CosmosDB, appreciating its scalability and performance for handling large datasets. Unfortunately, due to time constraints, I couldn't integrate CosmosDB into the app. However, this experience highlighted the extensive suite of powerful tools and services Microsoft offers, such as Azure Cognitive Services and Azure Machine Learning, which significantly enhance the development of intelligent applications.
+
+### How we built it
+We built Cognitive Tutor using a combination of machine learning algorithms and natural language processing techniques. During the submission period, I focused on optimizing the functionality of Cognitive Tutor using Azure OpenAI. I refined the interaction flow between students and the AI assistant, ensuring more accurate responses and a smoother user experience. Additionally, I enhanced the user interface to improve usability and accessibility, making it more intuitive for learners. These updates were aimed at maximizing the effectiveness of the AI-powered educational tool in providing personalized learning support.
+
+### Challenges we ran into
+I was pressed by the deadline, trying to make this project as creative and suitable for this amazing challenge as possible, aligned with the abilities and skills of other professional developers. I spent a lot of time on Microsoft Learn, as I wanted to gain as much knowledge as possible. Although this was a very important step, it took me a significant amount of time, especially with Phase 1 and Phase 2. I wished I had more time to develop the project further and present it with a much better interface and functionalities. Nonetheless, this experience was incredibly valuable, and I learned a great deal from it. I now understand what I am missing and what I need to improve.
+
+Accomplishments that we're proud of
+
+###What we learned
+Throughout the development of Cognitive Tutor, we learned the importance of integrating various AI technologies to create a seamless and effective learning platform. Understanding user needs and feedback was crucial in refining our algorithms and enhancing user experience
+
+### What's next for Cognitive Tutor
+developing more functionnalities also more microsoft services specially leveraging and including Cosmosdb.
+
+### Built With
+azure
+cognitive
+fastapi
+microsoft
+mongodb
+openai
+python
+react
